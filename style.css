@@ -1,0 +1,280 @@
+/* ================================
+   SMART HUB - PROFESSIONAL 2026 CSS
+   Future Proof & Scalable Version
+================================ */
+
+/* ===== ROOT VARIABLES ===== */
+:root{
+
+  /* Brand Colors */
+  --primary:#2563eb;
+  --primary-hover:#1d4ed8;
+  --secondary:#06b6d4;
+
+  /* Backgrounds */
+  --bg:#f8fafc;
+  --card-bg:#ffffff;
+  --dark-bg:#0f172a;
+
+  /* Text */
+  --text:#1e293b;
+  --text-light:#64748b;
+  --white:#ffffff;
+
+  /* UI */
+  --border-radius:16px;
+  --shadow-sm:0 4px 10px rgba(0,0,0,0.05);
+  --shadow-lg:0 15px 35px rgba(0,0,0,0.08);
+
+  /* Transition */
+  --transition:all 0.3s ease;
+}
+
+/* ===== DARK MODE ===== */
+body.dark{
+  --bg:#0f172a;
+  --card-bg:#1e293b;
+  --text:#f1f5f9;
+  --text-light:#94a3b8;
+}
+
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  transition:var(--transition);
+}
+
+/* ===== CONTAINER SYSTEM ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
+
+/* ===== HEADER ===== */
+header{
+  position:sticky;
+  top:0;
+  background:var(--dark-bg);
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+
+.logo{
+  color:var(--white);
+  font-size:22px;
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+/* ===== NAVIGATION ===== */
+nav{
+  display:flex;
+  align-items:center;
+}
+
+nav a{
+  color:var(--white);
+  text-decoration:none;
+  margin-left:25px;
+  font-size:14px;
+  position:relative;
+  transition:var(--transition);
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  width:0;
+  height:2px;
+  background:var(--primary);
+  transition:var(--transition);
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+  padding:130px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:var(--white);
+  animation:fadeIn 1s ease-in-out;
+}
+
+.hero h1{
+  font-size:44px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:650px;
+  margin:auto;
+  font-size:16px;
+  opacity:0.9;
+}
+
+/* ===== BUTTON SYSTEM ===== */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 24px;
+  border-radius:10px;
+  background:var(--white);
+  color:var(--primary);
+  font-weight:600;
+  text-decoration:none;
+  transition:var(--transition);
+}
+
+.btn-primary{
+  background:var(--primary);
+  color:var(--white);
+}
+
+.btn-primary:hover{
+  background:var(--primary-hover);
+}
+
+/* ===== SECTION ===== */
+.section{
+  padding:90px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+  font-size:30px;
+}
+
+/* ===== GRID SYSTEM ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:var(--card-bg);
+  padding:30px;
+  border-radius:var(--border-radius);
+  box-shadow:var(--shadow-lg);
+  transition:var(--transition);
+  transform:translateY(40px);
+  opacity:0;
+}
+
+.card.show{
+  transform:translateY(0);
+  opacity:1;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card h3{
+  margin-bottom:15px;
+}
+
+.card p{
+  color:var(--text-light);
+}
+
+/* ===== FORM STYLING ===== */
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:10px;
+  border:1px solid #e2e8f0;
+  font-size:14px;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:var(--primary);
+  color:var(--white);
+  transition:var(--transition);
+}
+
+button:hover{
+  background:var(--primary-hover);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--dark-bg);
+  color:var(--white);
+  text-align:center;
+  padding:50px 20px;
+  margin-top:80px;
+}
+
+footer a{
+  color:#38bdf8;
+  text-decoration:none;
+  margin:0 10px;
+  font-size:14px;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+  header{
+    padding:15px 20px;
+  }
+
+  nav a{
+    margin-left:15px;
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .section{
+    padding:70px 0;
+  }
+}
