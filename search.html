@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Search Results | SmartHub</title>
+<meta name="description" content="Search results for SmartHub content including tools, blog posts and study resources.">
+<meta name="robots" content="noindex">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+.search-wrapper{
+max-width:900px;
+margin:auto;
+}
+
+.search-box{
+margin-bottom:40px;
+text-align:center;
+}
+
+.search-box input{
+width:100%;
+max-width:500px;
+padding:12px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.result-card{
+background:var(--card-bg);
+padding:25px;
+border-radius:16px;
+box-shadow:var(--shadow-lg);
+margin-bottom:20px;
+}
+
+.result-card h3{
+margin-bottom:10px;
+}
+
+.result-card p{
+color:var(--text-light);
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">SmartHub</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="ai-blog.html">AI Blog</a>
+<a href="study.html">Study</a>
+<a href="quotes.html">Quotes</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h1 class="section-title">Search SmartHub</h1>
+
+<div class="search-wrapper">
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search here..." onkeyup="globalSearch()">
+</div>
+
+<div class="result-card searchable">
+<h3>Free Online Calculators</h3>
+<p>Use age, BMI and EMI calculators instantly.</p>
+<a href="tools.html" class="btn btn-primary">Open</a>
+</div>
+
+<div class="result-card searchable">
+<h3>Top AI Tools 2026</h3>
+<p>Discover the best AI tools for productivity.</p>
+<a href="ai-blog.html" class="btn btn-primary">Read</a>
+</div>
+
+<div class="result-card searchable">
+<h3>Study Resources</h3>
+<p>Exam preparation and productivity tips.</p>
+<a href="study.html" class="btn btn-primary">Open</a>
+</div>
+
+<div class="result-card searchable">
+<h3>Motivational Quotes</h3>
+<p>Daily inspirational quotes for success.</p>
+<a href="quotes.html" class="btn btn-primary">Read</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SmartHub - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
