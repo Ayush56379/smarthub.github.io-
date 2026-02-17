@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Motivational Quotes | SmartHub</title>
+<meta name="description" content="Read daily motivational and inspirational quotes to stay focused and positive.">
+<meta name="keywords" content="motivational quotes, inspirational quotes, daily quotes">
+<meta name="author" content="SmartHub">
+
+<link rel="canonical" href="https://smarthub.github.io/quotes.html">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* Quotes Page Styling */
+
+.quote-container{
+max-width:800px;
+margin:auto;
+text-align:center;
+background:var(--card-bg);
+padding:50px 40px;
+border-radius:20px;
+box-shadow:var(--shadow-lg);
+}
+
+.quote-text{
+font-size:22px;
+margin-bottom:20px;
+font-weight:500;
+}
+
+.quote-author{
+color:var(--text-light);
+margin-bottom:30px;
+}
+
+.category-section{
+margin-top:60px;
+}
+
+.category-card{
+background:var(--card-bg);
+padding:25px;
+border-radius:16px;
+box-shadow:var(--shadow-lg);
+text-align:center;
+}
+
+.category-card:hover{
+transform:translateY(-8px);
+transition:0.3s;
+}
+
+.ad-box{
+background:#e2e8f0;
+padding:30px;
+text-align:center;
+border-radius:12px;
+margin:50px 0;
+font-weight:600;
+color:#64748b;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">SmartHub</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="ai-blog.html">AI Blog</a>
+<a href="study.html">Study</a>
+<a href="quotes.html">Quotes</a>
+<a href="contact.html">Contact</a>
+<a href="#" onclick="toggleDark()">🌙</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h1 class="section-title">Daily Motivational Quotes</h1>
+
+<div class="quote-container">
+
+<div class="quote-text" id="quote">
+"Success is not final, failure is not fatal: It is the courage to continue that counts."
+</div>
+
+<div class="quote-author" id="author">
+— Winston Churchill
+</div>
+
+<button onclick="generateQuote()">Generate New Quote</button>
+
+</div>
+
+<div class="ad-box">
+AdSense Ad Placement Area
+</div>
+
+<div class="category-section">
+
+<h2 class="section-title">Quote Categories</h2>
+
+<div class="grid">
+
+<div class="category-card">
+<h3>Success Quotes</h3>
+<p>Inspiration to achieve your goals.</p>
+</div>
+
+<div class="category-card">
+<h3>Study Motivation</h3>
+<p>Stay focused and improve productivity.</p>
+</div>
+
+<div class="category-card">
+<h3>Life Lessons</h3>
+<p>Wisdom to guide your journey.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SmartHub - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+/* Random Quote Generator */
+
+const quotes = [
+  { text: "Success usually comes to those who are too busy to be looking for it.", author: "Henry David Thoreau" },
+  { text: "Don’t watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+  { text: "The future depends on what you do today.", author: "Mahatma Gandhi" },
+  { text: "Dream big and dare to fail.", author: "Norman Vaughan" }
+];
+
+function generateQuote(){
+  const random = Math.floor(Math.random() * quotes.length);
+  document.getElementById("quote").innerText = `"${quotes[random].text}"`;
+  document.getElementById("author").innerText = `— ${quotes[random].author}`;
+}
+
+</script>
+
+</body>
+</html>
