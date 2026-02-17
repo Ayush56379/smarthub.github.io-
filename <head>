@@ -1,0 +1,14 @@
+<!-- Open Graph (Social Sharing SEO) -->
+<meta property="og:title" content="SmartHub - Free Online Tools & AI Guides">
+<meta property="og:description" content="Free calculators, AI tools guides and study resources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://smarthub.github.io/">
+<meta property="og:image" content="https://smarthub.github.io/assets/images/preview.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SmartHub">
+<meta name="twitter:description" content="Free Tools & AI Guides Platform">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
