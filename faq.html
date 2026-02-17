@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | SmartHub</title>
+<meta name="description" content="Frequently asked questions about SmartHub tools, AI guides and resources.">
+<meta name="keywords" content="SmartHub FAQ, AI tools questions, online calculators help">
+<meta name="author" content="SmartHub">
+
+<link rel="canonical" href="https://smarthub.github.io/faq.html">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* FAQ Page Styling */
+
+.faq-wrapper{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:var(--card-bg);
+padding:25px;
+border-radius:16px;
+box-shadow:var(--shadow-lg);
+margin-bottom:20px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.faq-item:hover{
+transform:translateY(-5px);
+}
+
+.faq-question{
+font-weight:600;
+margin-bottom:10px;
+}
+
+.faq-answer{
+display:none;
+color:var(--text-light);
+}
+
+.ad-box{
+background:#e2e8f0;
+padding:30px;
+text-align:center;
+border-radius:12px;
+margin:50px auto;
+font-weight:600;
+color:#64748b;
+max-width:900px;
+}
+
+</style>
+
+<!-- FAQ Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are SmartHub tools free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, SmartHub provides free online tools including calculators and educational resources."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is content updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We regularly update AI guides, blog posts and tools to maintain accuracy."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<div class="logo">SmartHub</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="ai-blog.html">AI Blog</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+<a href="#" onclick="toggleDark()">🌙</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h1 class="section-title">Frequently Asked Questions</h1>
+
+<div class="faq-wrapper">
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">Are SmartHub tools free to use?</div>
+<div class="faq-answer">
+Yes, SmartHub provides completely free online calculators and educational content.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">Do I need to create an account?</div>
+<div class="faq-answer">
+No, you can use all tools and resources without creating an account.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">How can I contact SmartHub?</div>
+<div class="faq-answer">
+You can contact us through our Contact page or email at ayushprajpati6@gmail.com.
+</div>
+</div>
+
+</div>
+
+<div class="ad-box">
+AdSense Ad Placement Area
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SmartHub - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+function toggleFAQ(element){
+  const answer = element.querySelector(".faq-answer");
+  answer.style.display = answer.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
