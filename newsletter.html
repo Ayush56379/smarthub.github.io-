@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Subscribe to Newsletter | SmartHub</title>
+<meta name="description" content="Subscribe to SmartHub newsletter and get latest AI tools, study tips and productivity updates.">
+<meta name="keywords" content="SmartHub newsletter, subscribe, AI updates">
+<meta name="author" content="SmartHub">
+
+<link rel="canonical" href="https://smarthub.github.io/newsletter.html">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* Newsletter Page Styling */
+
+.newsletter-wrapper{
+max-width:800px;
+margin:auto;
+background:var(--card-bg);
+padding:60px 50px;
+border-radius:20px;
+box-shadow:var(--shadow-lg);
+text-align:center;
+}
+
+.newsletter-wrapper h1{
+margin-bottom:20px;
+}
+
+.newsletter-wrapper p{
+color:var(--text-light);
+margin-bottom:30px;
+}
+
+.newsletter-wrapper input{
+width:100%;
+max-width:400px;
+padding:12px;
+margin-bottom:20px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.success-message{
+margin-top:20px;
+color:green;
+font-weight:600;
+}
+
+@media(max-width:768px){
+.newsletter-wrapper{
+padding:40px 25px;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">SmartHub</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="ai-blog.html">AI Blog</a>
+<a href="tools.html">Tools</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="section">
+
+<div class="newsletter-wrapper">
+
+<h1>Join Our Newsletter</h1>
+
+<p>
+Subscribe to receive the latest updates on AI tools, study resources and productivity guides directly in your inbox.
+</p>
+
+<input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+<br>
+<button onclick="subscribeNewsletter()">Subscribe Now</button>
+
+<div id="successMessage" class="success-message"></div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SmartHub - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+function subscribeNewsletter(){
+  const email = document.getElementById("newsletterEmail").value;
+  const message = document.getElementById("successMessage");
+
+  if(email === ""){
+    alert("Please enter a valid email.");
+    return;
+  }
+
+  message.innerText = "Thank you for subscribing!";
+}
+</script>
+
+</body>
+</html>
