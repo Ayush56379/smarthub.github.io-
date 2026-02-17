@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | SmartHub</title>
+<meta name="description" content="Contact SmartHub for queries, suggestions or collaborations.">
+<meta name="keywords" content="contact SmartHub, support, help">
+<meta name="author" content="SmartHub">
+
+<link rel="canonical" href="https://yourdomain.com/contact.html">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+.contact-container{
+max-width:800px;
+margin:auto;
+background:var(--card-bg);
+padding:40px;
+border-radius:16px;
+box-shadow:var(--shadow-lg);
+}
+
+.contact-container h1{
+margin-bottom:20px;
+text-align:center;
+}
+
+.contact-container p{
+text-align:center;
+margin-bottom:30px;
+color:var(--text-light);
+}
+
+.contact-info{
+margin-top:30px;
+text-align:center;
+font-size:14px;
+color:var(--text-light);
+}
+
+.contact-info a{
+color:var(--primary);
+text-decoration:none;
+font-weight:600;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">SmartHub</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="ai-blog.html">AI Blog</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="#" onclick="toggleDark()">🌙</a>
+</nav>
+</header>
+
+<section class="section">
+
+<div class="contact-container">
+
+<h1>Contact Us</h1>
+
+<p>
+If you have any questions, suggestions, or business inquiries, feel free to reach out to us.
+</p>
+
+<form onsubmit="return validateForm()">
+
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<div class="contact-info">
+<p>Email: 
+<a href="mailto:ayushprajpati6@gmail.com">
+ayushprajpati6@gmail.com
+</a>
+</p>
+
+<p>Response Time: 24-48 Hours</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 SmartHub - All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
